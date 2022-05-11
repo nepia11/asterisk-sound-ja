@@ -1,0 +1,12 @@
+{
+  "input":{
+    "text":"おかけになった番号では非通知の着信を許可していません。"
+  },
+  "voice":{
+    "languageCode":"ja-JP",
+    "name":"ja-JP-Wavenet-B",
+  },
+  "audioConfig":{
+    "audioEncoding":"LINEAR16"
+  }
+}

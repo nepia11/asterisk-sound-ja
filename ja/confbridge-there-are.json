@@ -1,0 +1,12 @@
+{
+  "input":{
+    "text":"現在この会議には、"
+  },
+  "voice":{
+    "languageCode":"ja-JP",
+    "name":"ja-JP-Wavenet-B",
+  },
+  "audioConfig":{
+    "audioEncoding":"LINEAR16"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "input":{
+    "text":"現在の参加者リストは１、管理者以外をキックするには２、管理者以外をミュートまたは解除するには３、会議の録音は４、このメニューを終了して会議に戻るには８を押してください。"
+  },
+  "voice":{
+    "languageCode":"ja-JP",
+    "name":"ja-JP-Wavenet-B",
+  },
+  "audioConfig":{
+    "audioEncoding":"LINEAR16"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "input":{
+    "text":"当社の電話システムはイタチに食われました。"
+  },
+  "voice":{
+    "languageCode":"ja-JP",
+    "name":"ja-JP-Wavenet-B",
+  },
+  "audioConfig":{
+    "audioEncoding":"LINEAR16"
+  }
+}

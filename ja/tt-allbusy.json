@@ -1,0 +1,12 @@
+{
+  "input":{
+    "text":"全ての内線は他の電話セールスの相手ちゅうです。順番にお繋ぎしますので、そのままお待ち続けください。"
+  },
+  "voice":{
+    "languageCode":"ja-JP",
+    "name":"ja-JP-Wavenet-B",
+  },
+  "audioConfig":{
+    "audioEncoding":"LINEAR16"
+  }
+}

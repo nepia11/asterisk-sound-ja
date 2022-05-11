@@ -1,0 +1,12 @@
+{
+  "input":{
+    "text":"で、発言音量をリセットします。"
+  },
+  "voice":{
+    "languageCode":"ja-JP",
+    "name":"ja-JP-Wavenet-B",
+  },
+  "audioConfig":{
+    "audioEncoding":"LINEAR16"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "input":{
+    "text":"同時通話数の上限です。"
+  },
+  "voice":{
+    "languageCode":"ja-JP",
+    "name":"ja-JP-Wavenet-B",
+  },
+  "audioConfig":{
+    "audioEncoding":"LINEAR16"
+  }
+}

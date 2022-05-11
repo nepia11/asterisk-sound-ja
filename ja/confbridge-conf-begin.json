@@ -1,0 +1,12 @@
+{
+  "input":{
+    "text":"会議が開始されます"
+  },
+  "voice":{
+    "languageCode":"ja-JP",
+    "name":"ja-JP-Wavenet-B",
+  },
+  "audioConfig":{
+    "audioEncoding":"LINEAR16"
+  }
+}

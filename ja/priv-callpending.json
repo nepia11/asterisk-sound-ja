@@ -1,0 +1,12 @@
+{
+  "input":{
+    "text":"キャッチホン。発信者は、"
+  },
+  "voice":{
+    "languageCode":"ja-JP",
+    "name":"ja-JP-Wavenet-B",
+  },
+  "audioConfig":{
+    "audioEncoding":"LINEAR16"
+  }
+}

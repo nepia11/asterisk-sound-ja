@@ -1,0 +1,12 @@
+{
+  "input":{
+    "text":"エージェントはすでにログインしています。あなたのエージェント番号を入力しシャープを押してください。"
+  },
+  "voice":{
+    "languageCode":"ja-JP",
+    "name":"ja-JP-Wavenet-B",
+  },
+  "audioConfig":{
+    "audioEncoding":"LINEAR16"
+  }
+}

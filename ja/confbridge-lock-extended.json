@@ -1,0 +1,12 @@
+{
+  "input":{
+    "text":"会議をロックまたは解除します。会議がロックされている状態では管理者のみ入室できます。"
+  },
+  "voice":{
+    "languageCode":"ja-JP",
+    "name":"ja-JP-Wavenet-B",
+  },
+  "audioConfig":{
+    "audioEncoding":"LINEAR16"
+  }
+}

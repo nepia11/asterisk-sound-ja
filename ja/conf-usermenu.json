@@ -1,0 +1,12 @@
+{
+  "input":{
+    "text":"ミュートまたは解除するには１を、会議の音量を上げるまたは下げるには４または６を、あなたの音量を上げるまたは下げるには７または９を、終了するには８を押します。"
+  },
+  "voice":{
+    "languageCode":"ja-JP",
+    "name":"ja-JP-Wavenet-B",
+  },
+  "audioConfig":{
+    "audioEncoding":"LINEAR16"
+  }
+}

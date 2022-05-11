@@ -1,0 +1,12 @@
+{
+  "input":{
+    "text":"会議をロックまたは解除するには"
+  },
+  "voice":{
+    "languageCode":"ja-JP",
+    "name":"ja-JP-Wavenet-B",
+  },
+  "audioConfig":{
+    "audioEncoding":"LINEAR16"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "input":{
+    "text":"が、会議に入室します。"
+  },
+  "voice":{
+    "languageCode":"ja-JP",
+    "name":"ja-JP-Wavenet-B",
+  },
+  "audioConfig":{
+    "audioEncoding":"LINEAR16"
+  }
+}

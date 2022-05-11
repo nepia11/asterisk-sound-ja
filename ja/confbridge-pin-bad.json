@@ -1,0 +1,12 @@
+{
+  "input":{
+    "text":"誤った入力を行いました。"
+  },
+  "voice":{
+    "languageCode":"ja-JP",
+    "name":"ja-JP-Wavenet-B",
+  },
+  "audioConfig":{
+    "audioEncoding":"LINEAR16"
+  }
+}

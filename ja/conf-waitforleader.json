@@ -1,0 +1,12 @@
+{
+  "input":{
+    "text":"議長が入室次第、会議は開始されます。"
+  },
+  "voice":{
+    "languageCode":"ja-JP",
+    "name":"ja-JP-Wavenet-B",
+  },
+  "audioConfig":{
+    "audioEncoding":"LINEAR16"
+  }
+}
