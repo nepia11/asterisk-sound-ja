@@ -1,0 +1,12 @@
+{
+  "input":{
+    "text":"着信。発信者わ"
+  },
+  "voice":{
+    "languageCode":"ja-JP",
+    "name":"ja-JP-Wavenet-B",
+  },
+  "audioConfig":{
+    "audioEncoding":"LINEAR16"
+  }
+}

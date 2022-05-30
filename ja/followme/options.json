@@ -1,0 +1,12 @@
+{
+  "input":{
+    "text":"この通話を受けるには1を、拒否するには2を"
+  },
+  "voice":{
+    "languageCode":"ja-JP",
+    "name":"ja-JP-Wavenet-B",
+  },
+  "audioConfig":{
+    "audioEncoding":"LINEAR16"
+  }
+}

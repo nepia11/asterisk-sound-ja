@@ -1,0 +1,12 @@
+{
+  "input":{
+    "text":"呼び出し先が見つかりません。"
+  },
+  "voice":{
+    "languageCode":"ja-JP",
+    "name":"ja-JP-Wavenet-B",
+  },
+  "audioConfig":{
+    "audioEncoding":"LINEAR16"
+  }
+}

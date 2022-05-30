@@ -335,7 +335,7 @@
 334,priv-callpending,キャッチホン。発信者は、
 335,priv-introsaved,お待ちいただきありがとうございます。
 336,priv-recordintro,トーンのあとに、あなたの名前をお話ください。
-337,queue-callswaiting,
+337,queue-callswaiting,担当者を待っています。
 338,queue-holdtime,待ち時間の予想は、
 339,queue-less-than,より少ない
 340,queue-minute,ふん
@@ -526,3 +526,9 @@
 525,jp-tadashii,正しい
 526,jp-wa,わ
 527,jp-wo,を
+528,followme/call-from,着信。発信者わ
+529,followme/no-recording,着信があります
+530,followme/options,この通話を受けるには1を、拒否するには2を
+531,followme/pls-hold-while-try,呼び出し先を探しています。お待ちください。
+532,followme/sorry,呼び出し先が見つかりません。
+533,followme/status,呼び出し先は離席中です。探しますのでお待ちください。

@@ -1,5 +1,5 @@
 #
-DIRS = ja ja/digits ja/letters ja/phonetic
+DIRS = ja ja/digits ja/letters ja/phonetic ja/followme
 MHOME := $(dir $(abspath $(lastword $(MAKEFILE_LIST))))
 
 all:
