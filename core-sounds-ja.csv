@@ -58,7 +58,7 @@
 57,confbridge-mute-extended,ミュート状態ではあなたの声は会議には送られませんが、他の参加者の発言を聞くことはできます。
 58,confbridge-mute-in,ミュートまたは解除するには
 59,confbridge-mute-out,で、ミュートまたは解除します。
-60,confbridge-only-one,
+60,confbridge-only-one,現在、参加者がひとり居ます。
 61,confbridge-only-participant,この会議の参加者はあなただけです。
 62,confbridge-participants,人、参加しています。
 63,confbridge-pin,あなたのアイディーを入力し最後にシャープを押してください。
@@ -532,3 +532,4 @@
 531,followme/pls-hold-while-try,呼び出し先を探しています。お待ちください。
 532,followme/sorry,呼び出し先が見つかりません。
 533,followme/status,呼び出し先は離席中です。探しますのでお待ちください。
+534,local/my-sound,独自のトーキーを足したい場合にはこんな感じにします。そんなこんなでどんなんだこれ。
