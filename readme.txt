@@ -36,3 +36,4 @@ CSVの記述方法通りに、通番,ファイル名,内容 を記述します�
 local/のまま使う場合にはextenでPlayback(local/my-voice)のようにすると再生できます。
 
 2024/02/19 スペルミスを修正
+2024/08/05 Asterisk 18とAsterisk 20のcore-sounds.txtを比較したところ差はないようなのでAsterisk 20でもそのまま使えるはずです。
