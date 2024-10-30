@@ -37,3 +37,4 @@ local/のまま使う場合にはextenでPlayback(local/my-voice)のようにす
 
 2024/02/19 スペルミスを修正
 2024/08/05 Asterisk 18とAsterisk 20のcore-sounds.txtを比較したところ差はないようなのでAsterisk 20でもそのまま使えるはずです。
+2024/10/30 Asterisk 20とAsterisk 22のcore-sounds.txtを比較したところ差はないようなのでAsterisk 22でもそのまま使えるはずです。
