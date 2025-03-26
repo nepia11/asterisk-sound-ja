@@ -484,7 +484,7 @@
 483,vm-tempgreeting2,一時メッセージを録音するには１を、削除するには２を
 484,vm-tempremoved,一時メッセージは削除されました
 485,vm-then-pound,シャープを押してください。
-486,vm-theperson,このユーザーの内線は
+486,vm-theperson,このユーザーの内線
 487,vm-tmpexists,このメッセージは一時保存です。どのメッセージに適用しますか？
 488,vm-tocallback,メッセージの送信者を呼び出すには２を
 489,vm-tocallnum,この番号を呼び出すには１を
