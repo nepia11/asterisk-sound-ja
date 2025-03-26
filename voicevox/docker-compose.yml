@@ -1,0 +1,7 @@
+name: voicevox
+services:
+    voicevox_engine:
+        ports:
+            - 50021:50021
+        image: voicevox/voicevox_engine:cpu-latest
+
