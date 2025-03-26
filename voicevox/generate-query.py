@@ -2,6 +2,7 @@ import csv
 import json
 import os
 import requests  # requestsライブラリをインポート
+import argparse
 
 CORE_CSV_FILE = "../core-sounds-ja.csv"
 GS_CSV_FILE = "../gs-sounds-ja.csv"
@@ -42,6 +43,10 @@ def modify_pitch(query):
 
 def main():
     """メイン処理"""
+    parser = argparse.ArgumentParser(description="VOICEVOX音声合成クエリ生成スクリプト")
+    parser.add_argument("--sound_id", help="特定のsound_idを指定して処理する")
+    args = parser.parse_args()
+
     if not os.path.exists(QUERY_DIR):
         os.makedirs(QUERY_DIR)
 
@@ -54,6 +59,9 @@ def main():
                 if len(row) >= 3:
                     sound_id = row[0]
                     text = row[2]
+
+                    if args.sound_id and sound_id != args.sound_id:
+                        continue  # 特定のsound_idが指定された場合、それ以外の行はスキップ
 
                     if sound_id and text:
                         query = generate_query(text)

@@ -1,6 +1,7 @@
 import os
 import requests
 import json  # jsonをインポート
+import argparse
 
 QUERY_DIR = "query"
 WAV_DIR = "wav"
@@ -46,6 +47,10 @@ def save_wav(wav_data, filename):
 
 def main():
     """メイン処理"""
+    parser = argparse.ArgumentParser(description="VOICEVOX音声合成WAV生成スクリプト")
+    parser.add_argument("--sound_id", help="特定のsound_idを指定して処理する")
+    args = parser.parse_args()
+
     if not os.path.exists(WAV_DIR):
         os.makedirs(WAV_DIR)
 
@@ -56,10 +61,12 @@ def main():
     total = len(filenames)
 
     for i, filename in enumerate(filenames):
-        # print progress
-        print(f"Processing {i+1}/{total} {filename}")
         if filename.endswith(".json"):
             sound_id = filename[:-5]  # 拡張子を取り除く
+
+            if args.sound_id and sound_id != args.sound_id:
+                continue  # 特定のsound_idが指定された場合、それ以外のファイルはスキップ
+
             filepath = os.path.join(query_dir, filename)
             query_json = load_query(filepath)
             if query_json:
@@ -69,6 +76,8 @@ def main():
                     save_wav(wav_data, wav_filename)
             else:
                 print(f"スキップ: 不正なJSONファイル: {filename}")
+            # 進捗表示
+            print(f"Progress {i+1}/{total} {filename}")
 
 
 if __name__ == "__main__":
