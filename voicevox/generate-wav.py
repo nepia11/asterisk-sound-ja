@@ -7,7 +7,7 @@ WAV_DIR = "wav"
 VOICEVOX_URL = "127.0.0.1:50021"
 
 
-def generate_wav(query_json, speaker=2):
+def generate_wav(query_json, speaker=10006):
     """VOICEVOX APIを呼び出してWAVファイルを生成する"""
     try:
         response = requests.post(

@@ -9,7 +9,7 @@ QUERY_DIR = "query"
 VOICEVOX_URL = "127.0.0.1:50021"
 
 
-def generate_query(text, speaker=2):
+def generate_query(text, speaker=10006):
     """VOICEVOX APIを呼び出して音声合成クエリを生成する (requestsを使用)"""
     try:
         response = requests.post(f"http://{VOICEVOX_URL}/audio_query", params={"speaker": speaker, "text": text})
@@ -59,7 +59,7 @@ def main():
                         query = generate_query(text)
                         if query:
                             filename = f"{sound_id}.json"
-                            query = modify_pitch(query)
+                            # query = modify_pitch(query)
                             save_query(query, filename)
                     else:
                         print(f"スキップ: 不正な行: {row}")

@@ -2,6 +2,6 @@ name: voicevox
 services:
     voicevox_engine:
         ports:
-            - 50021:50021
-        image: voicevox/voicevox_engine:cpu-latest
+            - 50021:50121
+        image: voicevox/voicevox_nemo_engine:cpu-latest
 
