@@ -51,7 +51,13 @@ def main():
 
     query_dir = QUERY_DIR  # queryディレクトリを指定
 
-    for filename in os.listdir(query_dir):
+    filenames = os.listdir(query_dir)
+    filenames.sort()
+    total = len(filenames)
+
+    for i, filename in enumerate(filenames):
+        # print progress
+        print(f"Processing {i+1}/{total} {filename}")
         if filename.endswith(".json"):
             sound_id = filename[:-5]  # 拡張子を取り除く
             filepath = os.path.join(query_dir, filename)
