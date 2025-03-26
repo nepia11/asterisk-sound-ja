@@ -1,2 +1,6 @@
 query/*
 wav/*
+enc/*
+dst/*
+env/*
+*tar.gz
