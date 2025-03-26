@@ -2,9 +2,9 @@ import csv
 import json
 import os
 import requests  # requestsライブラリをインポート
-import subprocess
 
-CSV_FILE = "../core-sounds-ja.csv"
+CORE_CSV_FILE = "../core-sounds-ja.csv"
+GS_CSV_FILE = "../gs-sounds-ja.csv"
 QUERY_DIR = "query"
 VOICEVOX_URL = "127.0.0.1:50021"
 
@@ -45,25 +45,29 @@ def main():
     if not os.path.exists(QUERY_DIR):
         os.makedirs(QUERY_DIR)
 
-    with open(CSV_FILE, "r", encoding="utf-8") as csvfile:
-        reader = csv.reader(csvfile)
-        for i, row in enumerate(reader):
-            if i == 0:
-                continue  # Skip header row
-            if len(row) >= 3:
-                sound_id = row[0]
-                text = row[2]
+    def _process_csv(csv_file):
+        with open(csv_file, "r", encoding="utf-8") as csvfile:
+            reader = csv.reader(csvfile)
+            for i, row in enumerate(reader):
+                if i == 0:
+                    continue  # Skip header row
+                if len(row) >= 3:
+                    sound_id = row[0]
+                    text = row[2]
 
-                if sound_id and text:
-                    query = generate_query(text)
-                    if query:
-                        filename = f"{sound_id}.json"
-                        query = modify_pitch(query)
-                        save_query(query, filename)
+                    if sound_id and text:
+                        query = generate_query(text)
+                        if query:
+                            filename = f"{sound_id}.json"
+                            query = modify_pitch(query)
+                            save_query(query, filename)
+                    else:
+                        print(f"スキップ: 不正な行: {row}")
                 else:
-                    print(f"スキップ: 不正な行: {row}")
-            else:
-                print(f"スキップ: 列が不足: {row}")
+                    print(f"スキップ: 列が不足: {row}")
+
+    _process_csv(CORE_CSV_FILE)
+    _process_csv(GS_CSV_FILE)
 
 
 if __name__ == "__main__":

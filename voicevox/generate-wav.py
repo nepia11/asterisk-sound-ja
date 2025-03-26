@@ -1,8 +1,8 @@
-import csv
 import os
 import requests
+import json  # jsonをインポート
 
-CSV_FILE = "../core-sounds-ja.csv"
+QUERY_DIR = "query"
 WAV_DIR = "wav"
 VOICEVOX_URL = "127.0.0.1:50021"
 
@@ -23,9 +23,8 @@ def generate_wav(query_json, speaker=2):
         return None
 
 
-def load_query(filename):
+def load_query(filepath):
     """JSONファイルを読み込む"""
-    filepath = os.path.join("query", filename)
     try:
         with open(filepath, "r", encoding="utf-8") as f:
             return json.load(f)
@@ -50,29 +49,21 @@ def main():
     if not os.path.exists(WAV_DIR):
         os.makedirs(WAV_DIR)
 
-    with open(CSV_FILE, "r", encoding="utf-8") as csvfile:
-        reader = csv.reader(csvfile)
-        for i, row in enumerate(reader):
-            if i == 0:
-                continue  # Skip header row
-            if len(row) >= 1:
-                sound_id = row[0]
+    query_dir = QUERY_DIR  # queryディレクトリを指定
 
-                if sound_id:
-                    query_filename = f"{sound_id}.json"
-                    query_json = load_query(query_filename)
-                    if query_json:
-                        wav_data = generate_wav(query_json)
-                        if wav_data:
-                            filename = f"{sound_id}.wav"
-                            save_wav(wav_data, filename)
-                else:
-                    print(f"スキップ: 不正な行: {row}")
+    for filename in os.listdir(query_dir):
+        if filename.endswith(".json"):
+            sound_id = filename[:-5]  # 拡張子を取り除く
+            filepath = os.path.join(query_dir, filename)
+            query_json = load_query(filepath)
+            if query_json:
+                wav_data = generate_wav(query_json)
+                if wav_data:
+                    wav_filename = f"{sound_id}.wav"
+                    save_wav(wav_data, wav_filename)
             else:
-                print(f"スキップ: 列が不足: {row}")
+                print(f"スキップ: 不正なJSONファイル: {filename}")
 
 
 if __name__ == "__main__":
-    import json  # import文をここに移動
-
     main()
